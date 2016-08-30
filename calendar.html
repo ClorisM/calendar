@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>日历组件</title>
+	<meta charset="utf-8">
+	<link href="css/calendar.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/calendar.js"></script>
+  <script>
+  var date=new Date();
+  var callback=function(){
+      alert('你选择了');
+    }
+  var myCalendar=new Calendar($(document.body),false,false,3,100,date,callback);
+  </script>
+</body>
+</html>
+
+
+
